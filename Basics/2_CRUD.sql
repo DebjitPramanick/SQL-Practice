@@ -29,3 +29,9 @@ select LastName, FirstName from persons;
 
 # 6. Select distinct rows for certain columns
 select distinct LastName from persons;
+
+# 7. Update column value for certain entry
+update persons set FirstName="Sujan" where id=1
+
+# 8. Add column to a table
+alter table persons add gender varchar(6)
