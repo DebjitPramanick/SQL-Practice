@@ -23,3 +23,8 @@ insert into employees values
 
 # Showing count of employees and total salary for each location where total salary is > 200000
 select count(id), sum(salary) as total from employees group by location having sum(salary) > 200000;
+
+# Showing count of employees in each company which has avg salary >135000
+select company, count(*) as empCount from employees
+group by company
+having avg(salary)>135000

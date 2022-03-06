@@ -32,3 +32,8 @@ select pId, sum(price*stock) as profit from sales group by pId;
 
 # Show average sales for each product
 select pId, round(avg(price*stock), 1) as avg_sales from sales group by pId;
+
+# Showing count of employees at each location except "UK"
+select location, count(*) as empCount from employees
+where location != "UK" 
+group by location
