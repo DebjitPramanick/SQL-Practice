@@ -35,3 +35,6 @@ update persons set FirstName="Sujan" where id=1
 
 # 8. Add column to a table
 alter table persons add gender varchar(6)
+
+# 8. Delete entry from table
+delete from persons where id=2
